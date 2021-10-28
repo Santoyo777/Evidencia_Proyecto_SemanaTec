@@ -42,7 +42,7 @@ def move():
         print('Snake:', len(snake))
         food.x = randrange(-15, 15) * 10
 	food.y = randrange(-15, 15) * 10
-	score=head
+	score=snake
 	print (head)
 
 	else:
@@ -51,7 +51,9 @@ def move():
     clear()
 
     for body in snake:
-        square(body.x, body.y, 9, 'yellow')
+        square(body.x, body.y, 9, 'green')
+	if body > 5:
+		s:quare(body.x, body.y, 9, 'yellow')
 
     square(food.x, food.y, 9, 'blue')
     update()
