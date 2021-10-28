@@ -43,7 +43,7 @@ def move():
         food.x = randrange(-15, 15) * 10
 	food.y = randrange(-15, 15) * 10
 	score=snake
-	print (head)
+	print (score)
 
 	else:
         snake.pop(0)
