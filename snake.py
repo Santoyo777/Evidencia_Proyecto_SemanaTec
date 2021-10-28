@@ -41,18 +41,22 @@ def move():
     if head == food:
         print('Snake:', len(snake))
         food.x = randrange(-15, 15) * 10
-        food.y = randrange(-15, 15) * 10
-    else:
+	food.y = randrange(-15, 15) * 10
+	score=head
+	print (head)
+
+	else:
         snake.pop(0)
 
     clear()
 
     for body in snake:
-        square(body.x, body.y, 9, 'black')
+        square(body.x, body.y, 9, 'yellow')
 
-    square(food.x, food.y, 9, 'green')
+    square(food.x, food.y, 9, 'blue')
     update()
     ontimer(move, 100)
+
 
 setup(420, 420, 370, 0)
 hideturtle()
