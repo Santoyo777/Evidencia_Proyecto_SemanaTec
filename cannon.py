@@ -24,6 +24,9 @@ def tap(x, y):
         ball.y = -199
         speed.x = (x + 200) / 25
         speed.y = (y + 200) / 25
+	if score > 5
+		speed.x = (x + 200) / 20
+	        speed.y = (y + 200) / 20
 
 def inside(xy):
     "Return True if xy within screen."
