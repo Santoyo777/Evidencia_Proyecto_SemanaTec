@@ -7,6 +7,10 @@ Exercises
 3. Apply gravity to the targets.
 4. Change the speed of the ball.
 
+Equipo:
+- Julieta Aceves
+- Fernando Santoyo
+- Luis Karam
 """
 
 from random import randrange
