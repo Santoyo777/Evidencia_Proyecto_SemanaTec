@@ -12,6 +12,14 @@ Exercises
 from random import randrange
 from turtle import *
 from freegames import vector
+import random
+
+##to change ball and target colors randomly
+color_range =['cyan', 'purple','black','red','green','blue']
+ball_color = random.choice(color_range)
+target_color= random.choice(color_range)
+if target_color == ball_color:
+	target_color = random.choice(color_range)
 
 ball = vector(-200, -200)
 speed = vector(0, 0)
@@ -38,11 +46,11 @@ def draw():
 
     for target in targets:
         goto(target.x, target.y)
-        dot(20, 'blue')
+        dot(20, target_color)
 
     if inside(ball):
         goto(ball.x, ball.y)
-        dot(6, 'red')
+        dot(6, ball_color)
 
     update()
 
