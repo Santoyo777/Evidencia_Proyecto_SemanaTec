@@ -52,7 +52,8 @@ def move():
 
     square(food.x, food.y, 9, 'green')
     update()
-    ontimer(move, 100)
+    #Changing 100 to 25 to increase snake speed
+    ontimer(move, 25)
 
 setup(420, 420, 370, 0)
 hideturtle()
