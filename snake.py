@@ -7,6 +7,10 @@ Exercises
 3. How would you move the food?
 4. Change the snake to respond to arrow keys.
 
+Equipo: 
+- Julieta Aceves
+- Fernando Santoyo
+- Luis Karam
 """
 
 from turtle import *
