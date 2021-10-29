@@ -56,19 +56,19 @@ def move():
     if head == food:
         print('Snake:', len(snake))
         food.x = randrange(-15, 15) * 10
-	food.y = randrange(-15, 15) * 10
-	score=snake
-	print (score)
+        food.y = randrange(-15, 15) * 10
+        score=snake
+        print (score)
 
-	else:
+    else:
         snake.pop(0)
 
     clear()
 
     for body in snake:
         square(body.x, body.y, 9, 'green')
-	if body > 5:
-		square(body.x, body.y, 9, 'yellow')
+        if len(snake ) > 5:
+               square(body.x, body.y, 9, 'yellow')
 
     square(food.x, food.y, 9, 'blue')
     update()
