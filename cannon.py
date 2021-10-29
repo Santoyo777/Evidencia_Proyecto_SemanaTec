@@ -23,12 +23,13 @@ color_range =['cyan', 'purple','black','red','green','blue']
 ball_color = random.choice(color_range)
 target_color= random.choice(color_range)
 if target_color == ball_color:
-	target_color = random.choice(color_range)
+     target_color = random.choice(color_range)
 
 #Declaracion de variables 
 ball = vector(-200, -200)
 speed = vector(0, 0)
 targets = []
+scoretrack=[]
 
 #Funcion para detectar clicks
 def tap(x, y):
@@ -38,9 +39,9 @@ def tap(x, y):
         ball.y = -199
         speed.x = (x + 200) / 25
         speed.y = (y + 200) / 25
-	if score > 3
-		speed.x = (x + 200) / 20
-	        speed.y = (y + 200) / 20
+        if len(scoretrack) > 3:
+                speed.x = (x + 200) / 20
+                speed.y = (y + 200) / 20
 
 #Funcion para detectar si esta dentro de la pantalla
 def inside(xy):
@@ -85,13 +86,15 @@ def move():
     targets.clear()
 
     # Detect if the bullet hits a target
-    while:
+    #while :
     for target in dupe:
         if abs(target - ball) > 13:
             targets.append(target)
-	score=0
-		score+=1
-		print (score)
+            #score=0
+            #score+=1
+        else:
+            scoretrack.append(1)
+            print ('score',len(scoretrack))
     draw()
 
     # Detect when a target reaches the left side
