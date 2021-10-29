@@ -21,10 +21,12 @@ target_color= random.choice(color_range)
 if target_color == ball_color:
 	target_color = random.choice(color_range)
 
+#Declaracion de variables 
 ball = vector(-200, -200)
 speed = vector(0, 0)
 targets = []
 
+#Funcion para detectar clicks
 def tap(x, y):
     "Respond to screen tap."
     if not inside(ball):
@@ -36,10 +38,12 @@ def tap(x, y):
 		speed.x = (x + 200) / 20
 	        speed.y = (y + 200) / 20
 
+#Funcion para detectar si esta dentro de la pantalla
 def inside(xy):
     "Return True if xy within screen."
     return -200 < xy.x < 200 and -200 < xy.y < 200
 
+#Funcion para dibujar los objetos
 def draw():
     "Draw ball and targets."
     clear()
@@ -54,6 +58,7 @@ def draw():
 
     update()
 
+#Funcion para definir como se va a mover el objeto
 def move():
     "Move ball and targets."
     # Generate a new target at random times
@@ -93,6 +98,7 @@ def move():
 
     ontimer(move, 50)
 
+#Ejecucion
 setup(420, 420, 370, 0)
 hideturtle()
 up()
