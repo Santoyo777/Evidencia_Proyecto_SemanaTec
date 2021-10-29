@@ -6,7 +6,7 @@
 
 - Fernando Santoyo Moncada A01028389 
 - Luis Javier Karam Galland A01751941
--Julieta Elizabeth Aceves Gonzalez    A01029726
+- Julieta Elizabeth Aceves Gonzalez    A01029726
 
 
 -%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -21,4 +21,4 @@
 -En cannon.py: hacer que los target se regresen a su posicion inicial haciendo el juego interminable.
 -En snake.py: Aumentar la velocidad de la serpiente.
 -En snake.py: mover la posicion de la comida al azar.  
-main
+
