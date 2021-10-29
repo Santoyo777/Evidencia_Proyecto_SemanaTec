@@ -21,3 +21,9 @@
 - En snake.py: Aumentar la velocidad de la serpiente.
 - En snake.py: mover la posicion de la comida al azar.  
 - %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+- Aportaciones de Luis Javier Karam Galland A01751941
+- cannon.py: Correcion de errores de syntax y logica.
+- cannon.py: explicacion de varias funciones.
+- snake.py: Explicacion de varias funciones.
+- snake.py: Correcion de errores de logica.
+- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
