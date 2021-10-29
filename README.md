@@ -1,5 +1,4 @@
- Julieta_changesmade
- Solving conflict
+
 # Evidencia_Proyecto_SemanaTec
 =======
 # Evidencia Equipo 5
@@ -16,9 +15,9 @@
 - En el juego de snake iguale la longitud de la serpiente a un marcador para que se imprima
 - en el juego de snake al llegar a los 5 puntos la serpiente cambiara de color a amarillo
 - %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
--Aportaciones de Julieta Elizabeth Aceves González A010292726
--En cannon.py: cambiar el color de los target y la pelota al azar.
--En cannon.py: hacer que los target se regresen a su posicion inicial haciendo el juego interminable.
--En snake.py: Aumentar la velocidad de la serpiente.
--En snake.py: mover la posicion de la comida al azar.  
+- Aportaciones de Julieta Elizabeth Aceves González A010292726
+- En cannon.py: cambiar el color de los target y la pelota al azar.
+- En cannon.py: hacer que los target se regresen a su posicion inicial haciendo el juego interminable.
+- En snake.py: Aumentar la velocidad de la serpiente.
+- En snake.py: mover la posicion de la comida al azar.  
 
