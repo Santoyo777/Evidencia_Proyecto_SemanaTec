@@ -86,12 +86,10 @@ def move():
     targets.clear()
 
     # Detect if the bullet hits a target
-    #while :
+   
     for target in dupe:
         if abs(target - ball) > 13:
             targets.append(target)
-            #score=0
-            #score+=1
         else:
             scoretrack.append(1)
             print ('score',len(scoretrack))
