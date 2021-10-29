@@ -12,6 +12,14 @@ Exercises
 from random import randrange
 from turtle import *
 from freegames import vector
+import random
+
+##to change ball and target colors randomly
+color_range =['cyan', 'purple','black','red','green','blue']
+ball_color = random.choice(color_range)
+target_color= random.choice(color_range)
+if target_color == ball_color:
+	target_color = random.choice(color_range)
 
 ball = vector(-200, -200)
 speed = vector(0, 0)
@@ -24,6 +32,9 @@ def tap(x, y):
         ball.y = -199
         speed.x = (x + 200) / 25
         speed.y = (y + 200) / 25
+	if score > 3
+		speed.x = (x + 200) / 20
+	        speed.y = (y + 200) / 20
 
 def inside(xy):
     "Return True if xy within screen."
@@ -35,11 +46,11 @@ def draw():
 
     for target in targets:
         goto(target.x, target.y)
-        dot(20, 'blue')
+        dot(20, target_color)
 
     if inside(ball):
         goto(ball.x, ball.y)
-        dot(6, 'red')
+        dot(6, ball_color)
 
     update()
 
@@ -65,17 +76,20 @@ def move():
     targets.clear()
 
     # Detect if the bullet hits a target
+    while:
     for target in dupe:
         if abs(target - ball) > 13:
             targets.append(target)
-
+	score=0
+		score+=1
+		print (score)
     draw()
 
     # Detect when a target reaches the left side
     for target in targets:
         if not inside(target):
-            #targets.remove(target)
-            return
+            #Return targets to initial position in x
+            target.x= 200
 
     ontimer(move, 50)
 
